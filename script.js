@@ -24,3 +24,15 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToElement('.column');
 });
+
+function sendEmail() {
+    const email = "marquezsoftware.business@gmail.com"; // Substitua pelo e-mail da sua empresa
+    const subject = "Contato sobre serviços"; // Substitua pelo assunto desejado
+    const body = "Olá, gostaria de mais informações sobre seus serviços."; // Substitua pelo corpo do e-mail desejado
+
+    // Monta o link mailto
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Redireciona para o mailto
+    window.location.href = mailtoLink;
+}

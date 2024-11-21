@@ -90,6 +90,8 @@ nav{
     z-index: -100;
 }
 
+
+
 header{
     position: relative;
     padding-top: 2rem;
@@ -371,7 +373,7 @@ footer .column > a:hover{
     text-align: center;
 }
 
-@media (width < 900px){
+@media (max-width: 900px){
     .nav-links{
         display: none;
     }
@@ -392,7 +394,19 @@ footer .column > a:hover{
     }
 }
 
-@media (width < 600px){
+@media (max-width: 600px){
+
+    header .content{
+        text-align: center;
+    }
+    header .content h1 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    header .content p {
+        font-size: 0.9rem;
+    }
     header .image::before{
         display: none;
     }
