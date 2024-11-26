@@ -36,3 +36,19 @@ function sendEmail() {
     // Redireciona para o mailto
     window.location.href = mailtoLink;
 }
+
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+        // Fecha outras perguntas abertas
+        document.querySelectorAll('.faq-item').forEach(i => {
+            if (i !== item) i.classList.remove('open');
+        });
+
+        // Alterna a pergunta clicada
+        item.classList.toggle('open');
+    });
+});
+
+
+
+

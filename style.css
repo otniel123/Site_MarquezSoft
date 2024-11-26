@@ -373,6 +373,96 @@ footer .column > a:hover{
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background-color: #27272a;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    border-color: #1d4ed8;
+}
+
+.faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.faq-item .question h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.faq-item .question .icon {
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .question .icon {
+    transform: rotate(45deg);
+    color: #1d4ed8;
+}
+
+.faq-item .answer {
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-height: 0; /* Inicia invisível */
+    overflow: hidden;
+    transition: 0.5s ease;;
+    padding-top: 0;
+}
+
+.faq-item.open .answer {
+    max-height: 200px; /* Altura máxima suficiente para acomodar o texto */
+    transition: 1s ease;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 900px){
     .nav-links{
         display: none;
