@@ -20,6 +20,7 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #18181B;
+    overflow-x: hidden;
 }
 
 nav{
@@ -308,6 +309,10 @@ section .header{
     border-color: #1e40af;
 } */
 
+
+
+
+/* 
 footer{
     position: relative;
     display: grid;
@@ -371,7 +376,132 @@ footer .column > a:hover{
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
+} */
+
+
+
+
+
+
+/* Footer Styling */
+footer.footer {
+    background-color: #141414; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 2rem 1rem; /* Espaçamento interno */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+
+footer.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Espaço entre os elementos */
+}
+
+footer.footer .footer-logo img {
+    max-width: 150px; /* Tamanho da logo */
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+footer.footer .footer-logo img:hover {
+    opacity: 1;
+}
+
+footer.footer .footer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+footer.footer .footer-socials {
+    display: flex;
+    gap: 0.5rem; /* Espaço entre ícones */
+}
+
+footer.footer .social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+footer.footer .social-icon:hover {
+    background-color: #1d4ed8; /* Cor de destaque no hover */
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+footer.footer .footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #2c2c2c; /* Linha separadora */
+    padding-top: 1rem;
+    font-size: 0.875rem;
+    color: #a0a0a0;
+}
+
+footer.footer .footer-bottom p {
+    margin: 0;
+}
+
+/* Background Element for Design */
+footer.footer::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(48, 28, 233, 0.4), transparent);
+    z-index: 0;
+    border-radius: 50%;
+}
+
+footer.footer::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgb(255, 255, 255), transparent);
+    z-index: 0;
+    border-radius: 50%;
+}
+
+footer.footer .footer-content, 
+footer.footer .footer-bottom {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 1.5rem 1rem;
+    }
+
+    footer.footer .footer-text {
+        font-size: 0.9rem;
+    }
+
+    footer.footer .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+}
+
+
 
 
 
